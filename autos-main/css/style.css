@@ -1,0 +1,264 @@
+/*--------------------------------------------------------------
+# Geral
+--------------------------------------------------------------*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: FFFBF2;
+}
+
+h1{
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 3%;
+}
+
+h2{
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    margin-left: 3%;
+}
+
+h3{
+    font-size: 0.9em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 2%;
+    margin-left: 3%;
+}
+
+figure{
+    text-align: center;
+}
+
+img {
+    width: 70%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+footer{
+    background-color: rgba(80, 196, 235, 0.6);
+    padding: 20px 30px; 
+    margin-top: 5%;
+}
+
+/*---- Menu -----*/
+
+header{
+    background-color: rgba(80, 196, 235, 0.6);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px; 
+    height: 40px;
+}
+
+.logo {
+    width: 160px;
+    margin-top: 0.3%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 19px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #fff; 
+    color: #50C4EB;
+    border-width: 2px; 
+    border-style: solid; 
+    border-color:  #50C4EB; 
+    
+}
+
+.nav-icons {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    margin-right: 4%;
+}
+
+.nav-icons .icon a {
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1.4em;
+    color: #fff; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+
+.nav-icons .icon a:hover,
+.nav-icons .icon a.active { 
+    color: #50C4EB;  
+}
+
+.acessib{
+    margin-right: 30%;
+}
+
+/*---- Menu -----*/
+
+.cards-row {
+    display: flex;
+    gap: 2%;
+    justify-content: flex-start; 
+    margin-left: 3%; 
+    flex-wrap: wrap;
+    margin-bottom: 7%;
+}
+
+/*---- Banner -----*/
+
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(80, 196, 235, 0.09);
+    height: 130px;
+    gap: 2%;
+    flex-wrap: wrap;
+    margin-bottom: 7%;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.user-avatar {
+    width:  70%;
+    height: auto;
+}
+
+.link-user {
+    text-decoration: none;
+    color: black;
+}
+
+.link-user a:hover{
+    text-decoration: underline;
+}
+
+
+.bonecos-banner {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 6%;
+    width: 350px;
+}
+
+/*---- Banner -----*/
+
+
+
+/*--------------------------------------------------------------
+# Home 
+--------------------------------------------------------------*/
+
+.card-home {
+    width: 220px;
+    height: 170px;
+    background-color: #d3d3d3;
+    border-radius: 10px; 
+    position: relative;
+}
+
+.icon-card {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.icon-continue,
+.icon-completed {
+    cursor: pointer;
+    transition: color 0.4s;
+    transition: transform 0.4s ease;
+}
+
+.icon-continue {
+    color: #50C4EB; 
+}
+
+.icon-completed {
+    color: #4CAF50; 
+}
+
+.icon-continue:hover {
+    color: #3498db; 
+    transform: scale(1.2);
+}
+
+.icon-completed:hover {
+    color: #388E3C; 
+    transform: scale(1.2);
+}
+
+
+/*--------------------------------------------------------------
+# Jogos 
+--------------------------------------------------------------*/
+
+.card-jogos {
+    width: 280px;
+    height: 220px;
+    background-color: #d3d3d3;
+    border-radius: 10px; 
+    transition: transform 0.5s ease, margin 0.5s ease; 
+    transform-origin: left center; 
+}
+
+.card-jogos:hover {
+    transform: scale(1.2); 
+    z-index: 10; 
+    margin-right: 60px;
+}
+
+.card-jogos.active {
+    transform: scale(1.2); 
+    z-index: 10;
+}
+
+.card-jogos.active:hover {
+    margin: calc(1% * ( 1.2)); 
+}
+
+
+/*--------------------------------------------------------------
+# Progresso 
+--------------------------------------------------------------*/
+
